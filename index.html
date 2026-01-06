@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TA05 - MAIN PAGE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>TA05 - MAIN PAGE</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="1st Project.html">Project 1</a>
+        <a href="2nd Project.html">Project 2</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- PROJECT 1 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">Fail2ban + Discord</div>
+          <p class="card-description">
+            This project integrates Fail2Ban with Discord to provide real‑time
+            security alerts. The system detects brute‑force and DoS attacks on
+            services like SSH and Apache, automatically blocks malicious IPs,
+            and sends instant notifications to a Discord channel via Webhooks.
+          </p>
+          <div class="card-image">
+            <img
+              src="imatges/fail2ban-logo-security-art-work.jpeg"
+              alt="Code image"
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button
+            class="card-button"
+            onclick="window.location.href='1st Project.html'"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">LIFE CLUB MIXED MARTIAL ARTS</div>
+          <p class="card-description">
+            A modern website designed for a Mixed Martial Arts gym, showcasing
+            classes, schedules, trainers, and promotional content. The goal is
+            to create a dynamic and visually engaging platform to attract new
+            members.
+          </p>
+          <div class="card-image">
+            <img src="imatges/lifeclubmma.png" alt="MMA logo" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button
+            class="card-button"
+            onclick="window.location.href='2nd Project.html'"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

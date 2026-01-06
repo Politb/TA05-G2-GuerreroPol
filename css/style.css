@@ -1,0 +1,458 @@
+/* ============================================================
+   VARIABLES – SISTEMA DE DISEÑO APPLE
+   ============================================================ */
+   :root {
+    --bg: #f2f2f5;
+    --bg-card: #ffffff;
+    --text: #1a1a1a;
+    --text-soft: #555;
+    --border: #e5e5e7;
+    --shadow: rgba(0,0,0,0.06);
+    --radius: 16px;
+    --transition: 0.25s ease;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto", sans-serif;
+  }
+  
+  /* ============================================================
+     GLOBAL
+     ============================================================ */
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  header, .main-header {
+    background: var(--bg-card);
+    padding: 30px 40px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  
+  /* ============================================================
+     NAVBAR – CENTRADO + ESTILO APPLE
+     ============================================================ */
+  nav, .navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav a, .navbar a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: var(--transition);
+  }
+  
+  nav a:hover, .navbar a:hover {
+    background: #e8e8ea;
+  }
+  
+  /* ============================================================
+     INDEX – CONTENEDOR DE TARJETAS
+     ============================================================ */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  
+  /* ============================================================
+     TARJETAS – ESTILO APPLE
+     ============================================================ */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: 330px;
+    height: 580px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px var(--shadow);
+  }
+  
+  .card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text);
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: var(--text-soft);
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* ============================================================
+     BOTONES – MINIMAL APPLE
+     ============================================================ */
+  .card-button {
+    width: 100%;
+    padding: 14px 0;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .card-button:hover {
+    background: #333;
+  }
+  
+  /* ============================================================
+     PROJECT 2 – CONTENIDO
+     ============================================================ */
+  .project-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+  }
+  
+  .project-page h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text);
+  }
+  
+  .project-page p,
+  .project-page li {
+    font-size: 1.05rem;
+    color: var(--text-soft);
+  }
+  
+  /* ============================================================
+     VIDEO – MARCO ELEGANTE
+     ============================================================ */
+  .video-demo video {
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 25px var(--shadow);
+    margin-top: 10px;
+    transition: var(--transition);
+  }
+  
+  .video-demo video:hover {
+    transform: scale(1.01);
+  }
+  
+  /* ============================================================
+     FOOTER – ESTILO APPLE
+     ============================================================ */
+  footer {
+    background: var(--bg-card);
+    color: var(--text);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid var(--border);
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+    fill: var(--text);
+    transition: var(--transition);
+  }
+  
+  .social-icons a:hover {
+    fill: #666;
+    transform: scale(1.1);
+  }
+  
+  /* ============================================================
+     RESPONSIVE – MÓVIL REAL
+     ============================================================ */
+  @media (max-width: 768px) {
+  
+    header h1 {
+      font-size: 1.6rem;
+    }
+  
+    nav a, .navbar a {
+      padding: 8px 14px;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+    }
+  
+    .project-page {
+      padding: 40px 15px;
+    }
+  }
+
+  /* ============================================================
+   FIX NAV – ESTILO APPLE UNIFICADO
+   ============================================================ */
+
+/* Quitamos estilos raros del UL del Project 2 */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Los LI no deben romper el layout */
+.navbar ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo unificado para TODOS los enlaces del nav */
+nav a,
+.navbar a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: 0.25s ease;
+  display: inline-block;
+}
+
+/* Hover Apple */
+nav a:hover,
+.navbar a:hover {
+  background: #e8e8ea;
+}
+
+/* Asegurar centrado en todas las páginas */
+nav,
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* ============================================================
+   CONTACT PAGE – FORMULARIO APPLE
+   ============================================================ */
+
+.contact-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 35px 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 12px 28px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Títulos */
+.intro h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--text);
+}
+
+/* Labels */
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Inputs estilo Apple */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fafafa;
+  font-size: 1rem;
+  font-family: var(--font);
+  transition: 0.25s ease;
+  resize: none;
+}
+
+/* Focus Apple */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b8b8bb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+}
+
+/* Botón Apple */
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px 0;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.contact-form button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 25px 20px;
+    margin: 20px;
+  }
+
+  .intro h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px; /* antes 800px */
+  margin: 30px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* BOTÓN UNIFICADO – APPLE STYLE */
+.card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 580px;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60px;
+}
+
+.card-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.card-button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
