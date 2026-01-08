@@ -11,8 +11,8 @@ const projects = [
       link: "www.proyecto1.com",
     },
     {
-      title: "Segundo proyecto",
-      description: "Esta es la descripción de mi segundo proyecto",
+      title: "Second project",
+      description: "This is the description of my second project",
       image:
         "https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
@@ -20,8 +20,8 @@ const projects = [
       link: "www.proyecto1.com",
     },
     {
-      title: "Tercer proyecto",
-      description: "Esta es la descripción de mi tercer proyecto",
+      title: "Third project",
+      description: "This is the description of my third project",
       image:
         "https://images.unsplash.com/photo-1669570094762-828f3dfaf675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
@@ -29,8 +29,8 @@ const projects = [
       link: "www.proyecto1.com",
     },
     {
-      title: "Cuarto proyecto",
-      description: "Esta es la descripción de mi cuarto proyecto",
+      title: "Fourth project",
+      description: "This is the description of my fourth project",
       image:
         "https://images.unsplash.com/photo-1664575198308-3959904fa430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
@@ -38,8 +38,8 @@ const projects = [
       link: "www.proyecto1.com",
     },
     {
-      title: "Quinto proyecto",
-      description: "Esta es la descripción de mi quinto proyecto",
+      title: "Fifth project",
+      description: "This is the description of my fifth project",
       image:
         "https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
