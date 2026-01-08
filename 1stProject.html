@@ -1,92 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Project 1 - Fail2Ban + Discord Integration</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 1 - Fail2Ban + Discord Integration</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="1stProject.html">Project 1</a></li>
+          <li><a href="2ndProject.html">Project 2</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header class="main-header">
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Main Page</a></li>
-      <li><a href="1stProject.html">Project 1</a></li>
-      <li><a href="2ndProject.html">Project 2</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <main class="project-page">
+      <section class="intro">
+        <h2>Fail2Ban + Discord Integration</h2>
+        <p>
+          This project demonstrates the integration of the Fail2Ban intrusion
+          detection system with Discord, allowing real-time security
+          notifications directly to a Discord channel. The system detects
+          brute-force attacks, DoS attempts, and unauthorized access attempts on
+          services such as SSH and Apache2.
+        </p>
+      </section>
 
-<main class="project-page">
+      <section class="tech">
+        <h2>Objectives</h2>
+        <ul>
+          <li>
+            Configure Fail2Ban as an IDS to detect brute-force and DoS attacks.
+          </li>
+          <li>Integrate Fail2Ban with Discord using Webhooks.</li>
+          <li>
+            Simulate attacks using Apache Benchmark (ab) and SSH brute-force
+            attempts.
+          </li>
+          <li>
+            Automatically notify a Discord channel when Fail2Ban bans or unbans
+            an IP.
+          </li>
+        </ul>
+      </section>
 
-  <section class="intro">
-    <h2>Fail2Ban + Discord Integration</h2>
-    <p>
-      This project demonstrates the integration of the Fail2Ban intrusion detection system 
-      with Discord, allowing real-time security notifications directly to a Discord channel. 
-      The system detects brute-force attacks, DoS attempts, and unauthorized access attempts 
-      on services such as SSH and Apache2.
-    </p>
-  </section>
+      <section class="tech">
+        <h2>Software Used</h2>
+        <ul>
+          <li>Fail2Ban</li>
+          <li>Apache2</li>
+          <li>OpenSSH Server</li>
+          <li>Apache2-utils (ab)</li>
+          <li>Discord Webhooks</li>
+          <li>Ubuntu Linux (Server + Client VMs)</li>
+        </ul>
+      </section>
 
-  <section class="tech">
-    <h2>Objectives</h2>
-    <ul>
-      <li>Configure Fail2Ban as an IDS to detect brute-force and DoS attacks.</li>
-      <li>Integrate Fail2Ban with Discord using Webhooks.</li>
-      <li>Simulate attacks using Apache Benchmark (ab) and SSH brute-force attempts.</li>
-      <li>Automatically notify a Discord channel when Fail2Ban bans or unbans an IP.</li>
-    </ul>
-  </section>
+      <section class="tech">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Automatic IP banning after failed SSH login attempts.</li>
+          <li>Detection of DoS attacks using custom filters.</li>
+          <li>Custom Fail2Ban action script to send Discord notifications.</li>
+          <li>
+            Real-time alerts for: service start, stop, ban, and unban events.
+          </li>
+        </ul>
+      </section>
+      <div class="project-image">
+        <img
+          src="img/fail2ban-logo-security-art-work.jpeg"
+          alt="Fail2Ban Security Integration"
+        />
+      </div>
+    </main>
 
+    <footer>
+      <p>&copy; 2025 Pol Guerrero. All rights reserved.</p>
+      <p><strong>E-mail:</strong> pol.guerrero.7e7@itb.cat</p>
+      <p>
+        <strong>Address:</strong> Carrer d'Aiguablava, 121, Nou Barris, 08033
+        Barcelona
+      </p>
 
-  <section class="tech">
-    <h2>Software Used</h2>
-    <ul>
-      <li>Fail2Ban</li>
-      <li>Apache2</li>
-      <li>OpenSSH Server</li>
-      <li>Apache2-utils (ab)</li>
-      <li>Discord Webhooks</li>
-      <li>Ubuntu Linux (Server + Client VMs)</li>
-    </ul>
-  </section>
+      <div class="social-icons">
+        <a href="https://github.com/Politb" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.6-.8 1.6-.8.6-1.1 1.6-1.5 2.5-1.5.7 0 1.3.1 1.9.4.5-.4.9-.9 1.2-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2v3c0 .3.2.7.8.6A10.9 10.9 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"
+            />
+          </svg>
+        </a>
 
-  <section class="tech">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Automatic IP banning after failed SSH login attempts.</li>
-      <li>Detection of DoS attacks using custom filters.</li>
-      <li>Custom Fail2Ban action script to send Discord notifications.</li>
-      <li>Real-time alerts for: service start, stop, ban, and unban events.</li>
-    </ul>
-  </section>
-<div class="project-image">
-  <img src="img/fail2ban-logo-security-art-work.jpeg" alt="Fail2Ban Security Integration">
-</div>
-</main>
-
-<footer>
-  <p>&copy; 2025 Pol Guerrero. All rights reserved.</p>
-  <p><strong>E-mail:</strong> pol.guerrero.7e7@itb.cat</p>
-  <p><strong>Address:</strong> Carrer d'Aiguablava, 121, Nou Barris, 08033 Barcelona</p>
-
-  <div class="social-icons">
-    <a href="https://github.com/Politb" target="_blank" title="GitHub">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.6-.8 1.6-.8.6-1.1 1.6-1.5 2.5-1.5.7 0 1.3.1 1.9.4.5-.4.9-.9 1.2-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2v3c0 .3.2.7.8.6A10.9 10.9 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/>
-      </svg>
-    </a>
-
-    <a href="https://www.linkedin.com/in/pol-guerrero-262081347/" target="_blank" title="LinkedIn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.6v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.7h-4v-6c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1v6.1h-4v-12z"/>
-      </svg>
-    </a>
-  </div>
-</footer>
-
-</body>
+        <a
+          href="https://www.linkedin.com/in/pol-guerrero-262081347/"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.98h4v12H3v-12zm7.5 0h3.6v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.7h-4v-6c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1v6.1h-4v-12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
