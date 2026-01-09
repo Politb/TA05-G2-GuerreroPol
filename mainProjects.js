@@ -8,7 +8,7 @@ const projects = [
       image: "img/lifeclubmma.png",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
       github: "http://github.com/myuser/proyecto1",
-      link: "www.proyecto1.com",
+      link: "https://www.proyecto1.com",
     },
     {
       title: "Second project",
@@ -16,15 +16,15 @@ const projects = [
       image: "img/fail2ban-logo-security-art-work.jpeg",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
       github: "http://github.com/myuser/proyecto2",
-      link: "www.proyecto1.com",
+      link: "https://www.proyecto1.com",
     },
     {
       title: "Third project",
       description: `This project introduces the essential concepts of CSS. It explores the three main ways to apply styles and uses shared and page‑specific styles to structure and design multiple HTML pages. The work also covers the CSS box model, selector types, and layout techniques, applying them to redesign two existing pages.`,
       image: "img/css.png",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
-      github: "http://github.com/myuser/proyecto3",
-      link: "www.proyecto1.com",
+      github: "https://github.com/Politb/portal",
+      link: "https://www.proyecto1.com",
     },
     {
       title: "Fourth project",
@@ -33,7 +33,7 @@ const projects = [
         "https://images.unsplash.com/photo-1664575198308-3959904fa430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
       github: "http://github.com/myuser/proyecto4",
-      link: "www.proyecto1.com",
+      link: "https://www.proyecto1.com",
     },
     {
       title: "Fifth project",
@@ -42,7 +42,7 @@ const projects = [
         "https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80",
       tech: ["React", "HTML5", "CSS3", "JavaScript"],
       github: "http://github.com/myuser/proyecto5",
-      link: "www.proyecto1.com",
+      link: "https://www.proyecto1.com",
     },
    
   ];
