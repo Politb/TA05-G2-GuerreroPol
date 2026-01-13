@@ -8,16 +8,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
       <h1>TA05 - MAIN PAGE</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="1stProject.html">Project 1</a>
-        <a href="2ndProject.html">Project 2</a>
-        <a href="contact.html">Contact</a>
+      <nav class="navbar">
+        <div class="logo">
+            <img src="img/LogoPolWeb.png" alt="Logo Pol Guerrero" />
+          </div>
+        <ul>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="1stProject.html">Project 1</a></li>
+          <li><a href="2ndProject.html">Project 2</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <button id="themeBtn">☀</button>
+          </li>
+        </ul>
       </nav>
     </header>
     
@@ -42,7 +51,7 @@
         <div class="card-footer">
           <button
             class="card-button"
-            onclick="window.location.href='1st Project.html'"
+            onclick="window.location.href='1stProject.html'"
           >
             View Project
           </button>

@@ -24,11 +24,16 @@
 
   header, .main-header {
     background: var(--bg-card);
+<<<<<<< HEAD
     padding: 30px 40px;
+=======
+   
+>>>>>>> d1f16c2 (night mode)
     border-bottom: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
   }
   
   header h1 {
@@ -36,18 +41,36 @@
     font-weight: 700;
     margin-bottom: 12px;
     color: var(--text);
+=======
+    ;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 20px;
+>>>>>>> d1f16c2 (night mode)
   }
   
 
   nav, .navbar {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     margin-top: 10px;
+=======
+     justify-content: flex-start;
+     width: 100%;
+     gap:10px;
+    
+>>>>>>> d1f16c2 (night mode)
   }
   
   nav a, .navbar a {
     text-decoration: none;
     color: var(--text);
+<<<<<<< HEAD
     font-weight: 500;
     padding: 10px 18px;
     border-radius: 10px;
@@ -56,6 +79,38 @@
   
   nav a:hover, .navbar a:hover {
     background: #e8e8ea;
+=======
+    font-weight: 500; 
+    border-radius: 10px;
+    transition: var(--transition);
+  }
+
+  nav img {
+    width: 150px;
+    margin-right: 70px;
+    padding: 10px 10px;
+    
+  }
+  
+  nav a:hover, .navbar a:hover {
+    background: #e8e8ea;
+    color: #333;
+    transition: 0.5s ease;
+  }
+
+  nav button {
+    background: none;
+    border: none;
+    color: inherit;
+    transform: scale(1.5);
+    margin-left: 30px;
+  }
+
+  nav button:hover {
+    cursor: pointer;
+    scale: 1.3;
+    transition: 0.5s ease;
+>>>>>>> d1f16c2 (night mode)
   }
   
 
@@ -216,7 +271,11 @@
   padding: 0;
   margin: 0;
   display: flex;
+<<<<<<< HEAD
   gap: 18px;
+=======
+  gap: 25px;
+>>>>>>> d1f16c2 (night mode)
   justify-content: center;
   align-items: center;
 }
@@ -231,7 +290,11 @@
 nav a,
 .navbar a {
   text-decoration: none;
+<<<<<<< HEAD
   color: #dad0d0;
+=======
+  color: var(--text);
+>>>>>>> d1f16c2 (night mode)
   font-weight: 500;
   padding: 10px 18px;
   border-radius: 10px;
@@ -428,4 +491,80 @@ nav,
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
+<<<<<<< HEAD
 }
+=======
+}
+
+/* Tema Claro */
+body.light {
+  --bg: #f5f5f5;
+  --bg-card: #ffffff;
+  --text: #1a1a1a;
+  --text-soft: #494848;
+  --border: #d0d0d0;
+  --shadow: rgba(0,0,0,0.1);
+}
+
+body.light header,
+body.light .main-header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
+
+body.light nav a:hover,
+body.light .navbar a:hover {
+  background: #e0e0e0;
+  color: #333;
+}
+
+body.light .card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+body.light .card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+body.light footer {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+
+body.light .card-button {
+  background: #2667ac;
+  color: white;
+}
+
+body.light .card-button:hover {
+  background: #023f80;
+}
+
+body.light nav a,
+body.light .navbar a {
+  color: #333333;
+}
+
+body.light nav a:hover,
+body.light .navbar a:hover {
+  color: #000000;
+}
+
+body.light a svg {
+    
+    transition: all 0.3s ease-in-out;
+    color: rgb(3, 2, 0);
+    width: 30px;
+    height: 30px;
+  }
+
+  body.light .project-card > .detail > .tech {
+    color: rgb(9, 90, 195);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+>>>>>>> d1f16c2 (night mode)

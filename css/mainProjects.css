@@ -40,7 +40,14 @@
   }
   
   .project-card > .detail > .tech {
+<<<<<<< HEAD
     color: var(--highlight);
+=======
+    color: rgb(100, 212, 250);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+>>>>>>> d1f16c2 (night mode)
   }
 
   .projects {

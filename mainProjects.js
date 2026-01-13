@@ -99,5 +99,10 @@ const ProjectCard = (project) => `
 </div>
 </div>
 `;
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> d1f16c2 (night mode)
 
 Projects();
