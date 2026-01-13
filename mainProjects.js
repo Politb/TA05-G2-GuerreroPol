@@ -1,58 +1,57 @@
 const projects = [
-    {
-      title: "First project",
-      description: `This project integrates Fail2Ban with Discord to provide real‑time
+  {
+    title: "First project",
+    description: `This project integrates Fail2Ban with Discord to provide real‑time
             security alerts. The system detects brute‑force and DoS attacks on
             services like SSH and Apache, automatically blocks malicious IPs,
             and sends instant notifications to a Discord channel via Webhooks.`,
-      image: "img/lifeclubmma.png",
-      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Stripe"],
-      github: "http://github.com/myuser/proyecto1",
-      link: "https://www.proyecto1.com",
-    },
-    {
-      title: "Second project",
-      description: "                        A modern website designed for a Mixed Martial Arts gym, showcasing classes, schedules, trainers, and promotional content. The goal is to create a dynamic and visually engaging platform to attract new members.",
-      image: "img/fail2ban-logo-security-art-work.jpeg",
-      tech: ["React", "HTML5", "CSS3", "JavaScript"],
-      github: "http://github.com/myuser/proyecto2",
-      link: "https://www.proyecto1.com",
-    },
-    {
-      title: "Third project",
-      description: `This project introduces the essential concepts of CSS. It explores the three main ways to apply styles and uses shared and page‑specific styles to structure and design multiple HTML pages. The work also covers the CSS box model, selector types, and layout techniques, applying them to redesign two existing pages.`,
-      image: "img/css.png",
-      tech: ["HTML5", "CSS"],
-      github: "https://github.com/Politb/portal",
-      link: "https://www.proyecto1.com",
-    },
-    {
-      title: "Fourth project",
-      description: "            This is the description of my fourth project",
-      image:
-        "https://images.unsplash.com/photo-1664575198308-3959904fa430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      tech: ["React", "HTML5", "CSS3", "JavaScript"],
-      github: "http://github.com/myuser/proyecto4",
-      link: "https://www.proyecto1.com",
-    },
-    {
-      title: "Fifth project",
-      description: "            This is the description of my fifth project",
-      image:
-        "https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80",
-      tech: ["React", "HTML5", "CSS3", "JavaScript"],
-      github: "http://github.com/myuser/proyecto5",
-      link: "https://www.proyecto1.com",
-    },
-   
-  ];
+    image: "img/lifeclubmma.png",
+    tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Stripe"],
+    github: "http://github.com/myuser/proyecto1",
+    link: "https://www.proyecto1.com",
+  },
+  {
+    title: "Second project",
+    description:
+      "                        A modern website designed for a Mixed Martial Arts gym, showcasing classes, schedules, trainers, and promotional content. The goal is to create a dynamic and visually engaging platform to attract new members.",
+    image: "img/fail2ban-logo-security-art-work.jpeg",
+    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    github: "http://github.com/myuser/proyecto2",
+    link: "https://www.proyecto1.com",
+  },
+  {
+    title: "Third project",
+    description: `This project introduces the essential concepts of CSS. It explores the three main ways to apply styles and uses shared and page‑specific styles to structure and design multiple HTML pages. The work also covers the CSS box model, selector types, and layout techniques, applying them to redesign two existing pages.`,
+    image: "img/css.png",
+    tech: ["HTML5", "CSS"],
+    github: "https://github.com/Politb/portal",
+    link: "https://www.proyecto1.com",
+  },
+  {
+    title: "Fourth project",
+    description: "            This is the description of my fourth project",
+    image:
+      "https://images.unsplash.com/photo-1664575198308-3959904fa430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    github: "http://github.com/myuser/proyecto4",
+    link: "https://www.proyecto1.com",
+  },
+  {
+    title: "Fifth project",
+    description: "            This is the description of my fifth project",
+    image:
+      "https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80",
+    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    github: "http://github.com/myuser/proyecto5",
+    link: "https://www.proyecto1.com",
+  },
+];
 
 const cleanPage = (element) => {
   element.innerHTML = "";
 };
 
 const Divider = () => `<div class="divider"></div>`;
-
 
 const Projects = () => {
   const main = document.querySelector("main");
@@ -99,7 +98,5 @@ const ProjectCard = (project) => `
 </div>
 </div>
 `;
-    
-
 
 Projects();
