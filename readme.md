@@ -6,10 +6,10 @@
 > The website has been built using **HTML5**, **CSS3**, and basic **JavaScript** functionalities for interactivity.
 >
 > ## 🎯 Learning Objectives  
-> - Recognize and use markup languages for web development (**RA1, RA2**).  
-> - Manipulate and validate web content with client-side scripts (**RA3, RA4**).  
-> - Structure and style web documents using semantic HTML and CSS (**RA2, RA5**).  
-> - Apply design responsiveness and user interaction principles (**RA6**).  
+> - Recognize and use markup languages for web development.  
+> - Manipulate and validate web content with client-side scripts.  
+> - Structure and style web documents using semantic HTML and CSS.  
+> - Apply design responsiveness and user interaction principles.  
 >
 > ## 🧩 Project Structure  
 > ```
