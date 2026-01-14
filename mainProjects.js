@@ -31,7 +31,7 @@ const projects = [
     title: "Fourth project",
     description: "            This is the description of my fourth project",
     image:
-      "https://pngimg.com/uploads/macbook/macbook_PNG61.png",
+      "https://images.unsplash.com/photo-1664575198308-3959904fa430?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
     tech: ["React", "HTML5", "CSS3", "JavaScript"],
     github: "http://github.com/myuser/proyecto4",
     link: "https://www.proyecto1.com",
